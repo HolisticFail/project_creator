@@ -2,10 +2,9 @@
 from pathlib import Path
 
 menu = [
-    "Créer un dossier",
-    "Créer un fichier",
+    "Créer un dossier & un fichier",
     "Créer le projet",
-    "Quitter"
+    "Quitter",
 ]
 separator = "-"*50
 menu_nbr = len(menu)
@@ -23,11 +22,9 @@ while True:
     #loop in case invalid input from user
     if not (choice_user.isdigit() and 1 <= int(choice_user) <= menu_nbr):
         print(f"Veuillez choisir parmi les {menu_nbr} choix suivants : ")
-    #name your folder
+    #name your folder & name your file
     elif choice_user == "1":
         folder_creation = input("Indiquez un nom de dossier : ")
-    #name your file
-    elif choice_user == "2":
         file_creation = input("Indiquez un nom de fichier (ne pas oublier l'extension) : ")  
     #create folder and file on the desktop
     elif choice_user == "3":
