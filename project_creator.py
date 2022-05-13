@@ -27,7 +27,7 @@ while True:
         folder_creation = input("Indiquez un nom de dossier : ")
         file_creation = input("Indiquez un nom de fichier (ne pas oublier l'extension) : ")  
     #create folder and file on the desktop
-    elif choice_user == "3":
+    elif choice_user == "2":
         #import key and value in dict
         project_creator[folder_creation] = [file_creation]
         #scan the dict
